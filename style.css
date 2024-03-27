@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&family=Protest+Guerrilla&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(241, 131, 5);
+    border: 2px solid black;
+    /* border-radius: px; */
+    /* padding: 3px; */
+    /* margin: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+
+#logo {
+    /* display:flex; */
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    margin: 0 14px;
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 34px; */
+}
+
+.navbar p {
+    font-family: "Rubik Gemstones", system-ui;
+    color: darkblue;
+    /* padding: 34px; */
+}
+
+#logo img {
+    height: 42px;
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    transition: 0.2s ease;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    /* margin-top: px; */
+}
+
+.navbar li {
+    margin: 0 20px;
+    background-color: none;
+    justify-content: center;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(229, 18, 18);
+    background-color: rgb(197, 190, 178);
+    padding: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    font-family: "Rubik Gemstones", system-ui;
+    box-shadow: 0em 0 2.8em gray;
+
+    /* box-shadow: 0 5px 4px -2px gray; */
+
+
+}
+
+.navbar li a:hover {
+    filter: blur(0.5px);
+    color: rgb(38, 5, 228);
+    font-weight: bold;
+    font-size: 20px;
+    /* transition: 0.3s ease; */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#content {
+    padding-top: 50px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section#home {
+    height: 600px;
+    width: 100%;
+    background-image: url("cake.jpg");
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(8px); */
+    text-align: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+section#home h1 {
+    color: rgb(223, 156, 11);
+    font-size: 70px;
+    font-family: "Rubik Gemstones", system-ui;
+    margin-top: 70px;
+}
+
+section#home p {
+    color: rgb(237, 32, 66);
+    font-size: 35px;
+    font-family: "Rubik Gemstones", system-ui;
+
+}
+
+#about {
+    height: 444px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 98%;
+    margin: 22px 16px;
+    height: 293px;
+    display: inline-block;
+    background-color: rgb(21, 217, 122);
+    box-shadow: 0em 0 2.8em black;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 15px 12px;
+    font-family: "Rubik Gemstones", system-ui;
+    color: #d5420c;
+    font-size: 24px;
+
+}
+
+#about h2 {
+    font-size: 45px;
+    text-align: center;
+    color: #11aff9;
+    padding-top: 15px;
+    font-family: "Rubik Gemstones", system-ui;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.card-content p {
+    font-size: 15px;
+    font-family: "Madimi One", sans-serif;
+
+}
+
+.card-img {
+    height: 121px;
+    padding: 0 14px;
+
+    /* height: inherit; */
+}
+
+.card-img img {
+    height: inherit;
+    font-weight: 100px;
+    /* padding: 0 14px; */
+}
+
+#services h2 {
+    font-size: 45px;
+    text-align: center;
+    color: #11aff9;
+    padding-top: 15px;
+    font-family: "Rubik Gemstones", system-ui;
+}
+
+.services li {
+    font-size: 20px;
+    font-family: "Rubik Gemstones", system-ui;
+    padding-right: 60px;
+    color: #f89806;
+}
+
+#services {
+    height: 400px;
+    display: inline-block;
+    width: 100%;
+}
+
+#services .card {
+    width: 46%;
+    background-color: rgb(65, 204, 225);
+}
+
+.services1 li {
+    font-size: 20px;
+    font-family: "Rubik Gemstones", system-ui;
+    padding-right: 80px;
+    color: #f89806;
+}
+
+#contact h2 {
+    /* background-color: bisque; */
+    color: #11aff9;
+    font-size: 45px;
+    text-align: center;
+    font-family: "Rubik Gemstones", system-ui;
+    margin: 12px 0;
+}
+
+#contact .myInput {
+    width: 46%;
+    padding: 12px;
+    margin: 4px;
+    font-size: 20px;
+    border: 3px gold solid;
+    border-radius: 8px;
+
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    width: 46%;
+    padding: 12px;
+    margin: 4px;
+    font-size: 20px;
+    border: 3px gold solid;
+    border-radius: 8px;
+}
+
+#submitBtn {
+    cursor: pointer;
+    padding: 08px;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 9px 2px 2px;
+
+}
+
+#footer {
+    height: 60px;
+    display: flex;
+    color: ghostwhite;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Anta", sans-serif;
+
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        background: transparent;
+        width: 50%;
+        left: 63%;
+        gap: 31px;
+        top: 19px;
+        height: 294px;
+    }
+
+    #about{
+        height: 580px;
+    }
+    #about .card{
+        height: 368px;
+    }
+   
+    #services .card {
+        height: 289px;
+        width: 97%;
+    }
+    #services {
+        height: 739px;
+    }
+    .navbar{
+        background-color: #456;
+        transition: all 0.9s ease-in-out;
+    }
+
+}
+@media (min-width:769px) and  (max-width: 992px){
+    #about{
+        height: 500px;
+    }
+    #about .card{
+        height: 300px;
+    }
+    #services{
+        height: 695px;
+    }
+    #services .card {
+        height: 240px;
+        width: 97%;
+    }
+    .navbar{
+        background-color: #11aff9;
+        transition: all 0.9s ease-in-out;
+    }
+
+}
